@@ -1,7 +1,7 @@
 {
-  "name": "pluralsight-redux-starter",
+  "name": "React with Redux and Babel",
   "version": "1.0.0",
-  "description": "Starter kit for React and Redux Pluralsight course by Cory House",
+  "description": "Just a sample application demonstrating React with Redux and Babel",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel open:src lint:watch",
@@ -10,7 +10,7 @@
     "lint:watch":"npm run lint -- --watch",
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\""
   },
-  "author": "Cory House",
+  "author": "Colin Nieuwenhuizen",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
@@ -62,9 +62,5 @@
     "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/coryhouse/pluralsight-redux-starter"
   }
 }
