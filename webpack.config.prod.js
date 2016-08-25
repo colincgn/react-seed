@@ -1,9 +1,10 @@
 import webpack from 'webpack';
 import path from 'path';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 const GLOBALS = {
   'process.env.NODE_ENV' : JSON.stringify('production')
-}
+};
 
 export default {
     debug: true,

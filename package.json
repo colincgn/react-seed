@@ -14,7 +14,7 @@
     "build:html": "babel-node tools/buildHtml.js",
     "prebuild": "npm-run-all clean-dist test lint build:html",
     "build": "babel-node tools/build.js",
-    "postbuild": "babel-node tools/distServer.js" // Opens up server to test it
+    "postbuild": "babel-node tools/distServer.js"
   },
   "author": "Colin Nieuwenhuizen",
   "license": "MIT",
