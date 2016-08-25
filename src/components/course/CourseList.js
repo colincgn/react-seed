@@ -19,11 +19,12 @@ const CourseList = ({courses, deleteCourse}) => {
       )}
       </tbody>
     </table>
-  )
+  );
 };
 
 CourseList.propTypes = {
-  courses: PropTypes.array.isRequired
+  courses: PropTypes.array.isRequired,
+  deleteCourse: PropTypes.func.isRequired
 };
 
 export default CourseList;
