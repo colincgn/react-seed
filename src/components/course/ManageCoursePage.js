@@ -15,13 +15,8 @@ export class ManageCoursePage extends React.Component {
       saving: false
     };
 
-    context.router.setRouteLeaveHook(props.route, this.routerWillLeave);
     this.updateCourseState = this.updateCourseState.bind(this);
     this.saveCourse = this.saveCourse.bind(this);
-  }
-
-  routerWillLeave (nextState, router) {
-    return 'Your work is not saved! Are you sure you want to leave?';
   }
 
   componentWillReceiveProps(nextProps) {
