@@ -4,7 +4,7 @@ import React from 'react';
 import  { render } from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import {Provider} from 'react-redux';
-import configureStore from './store/configureStore.dev';
+import configureStore from './store/configureStore';
 import routes from './routes';
 import {loadCourses} from './actions/courseActions';
 import {loadAuthors} from './actions/authorActions';
@@ -12,6 +12,8 @@ import {loadAuthors} from './actions/authorActions';
 import './styles/styles.css'; // We can get Webpack to import css too!
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/toastr/build/toastr.min.css';
+import './styles/sass/main.scss';
+
 
 const store = configureStore();
 store.dispatch(loadCourses());
